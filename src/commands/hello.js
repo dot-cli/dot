@@ -1,4 +1,4 @@
-const { Command, flags } = require('@oclif/command')
+const { Command } = require('@oclif/command')
 const auth = require('../lib/auth')
 
 class HelloCommand extends Command {
@@ -9,13 +9,6 @@ class HelloCommand extends Command {
   }
 }
 
-HelloCommand.description = `Describe the command here
-...
-Extra documentation goes here
-`
-
-HelloCommand.flags = {
-  name: flags.string({ char: 'n', description: 'name to print' })
-}
+HelloCommand.description = `Prints out a greeting to the logged in user`
 
 module.exports = HelloCommand

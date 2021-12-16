@@ -34,18 +34,11 @@ USAGE
 
 ## `dot hello`
 
-Describe the command here
+Prints out a greeting to the logged in user
 
 ```
 USAGE
   $ dot hello
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
 ```
 
 _See code: [src/commands/hello.js](https://github.com/chico/dot/blob/v0.0.0/src/commands/hello.js)_
@@ -69,18 +62,11 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.1
 
 ## `dot login`
 
-Describe the command here
+Logs in the user using github
 
 ```
 USAGE
   $ dot login
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
 ```
 
 _See code: [src/commands/login.js](https://github.com/chico/dot/blob/v0.0.0/src/commands/login.js)_

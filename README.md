@@ -30,6 +30,7 @@ USAGE
 <!-- commands -->
 * [`dot hello`](#dot-hello)
 * [`dot help [COMMAND]`](#dot-help-command)
+* [`dot login`](#dot-login)
 
 ## `dot hello`
 
@@ -64,5 +65,23 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.17/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.14/src/commands/help.ts)_
+
+## `dot login`
+
+Describe the command here
+
+```
+USAGE
+  $ dot login
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/login.js](https://github.com/chico/dot/blob/v0.0.0/src/commands/login.js)_
 <!-- commandsstop -->

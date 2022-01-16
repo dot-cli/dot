@@ -1,10 +1,20 @@
-const { expect, test } = require('@oclif/test')
+import { expect, test } from '@oclif/test'
+
+import auth from 'lib/auth'
+
+import { profile, mockLogin, mockProfile } from './helper'
 
 describe('hello', () => {
+  beforeEach(() => {
+    mockLogin()
+  })
+
   test
     .stdout()
+    .stub(auth, 'profile', mockProfile())
     .command(['hello'])
     .it('runs hello', (ctx) => {
-      expect(ctx.stdout).to.contain('Hello Mock')
+      expect(auth.profile.called).to.equal(true)
+      expect(ctx.stdout).to.contain(`Hello ${profile.firstName}`)
     })
 })

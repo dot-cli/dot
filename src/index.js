@@ -1,1 +1,3 @@
-module.exports = require('@oclif/command')
+import cmd from '@oclif/command'
+
+export default cmd

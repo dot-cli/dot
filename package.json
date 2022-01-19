@@ -8,9 +8,8 @@
   },
   "bugs": "https://github.com/dot-cli/dot/issues",
   "dependencies": {
-    "@oclif/command": "^1",
-    "@oclif/config": "^1",
-    "@oclif/plugin-help": "^3",
+    "@oclif/core": "^1",
+    "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.0.11",
     "ghauth": "chico/ghauth.git#5.0.2",
     "github-api": "^3.4.0"
@@ -20,10 +19,10 @@
     "@babel/core": "^7.16.7",
     "@babel/node": "^7.16.7",
     "@babel/preset-env": "^7.16.7",
-    "@oclif/dev-cli": "^1",
-    "@oclif/test": "^1",
     "babel-plugin-add-module-exports": "^1.0.4",
     "babel-plugin-module-resolver": "^4.1.0",
+    "@oclif/test": "^2",
+    "shx": "^0.3.3",
     "chai": "^4",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^3.1.2",
@@ -60,10 +59,11 @@
   "repository": "dot-cli/dot",
   "scripts": {
     "dot": "babel-node ./bin/run",
-    "postpack": "rm -f oclif.manifest.json",
-    "posttest": "eslint . --quiet",
-    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "dot-dev": "babel-node ./bin/dev",
     "test": "jest",
-    "version": "oclif-dev readme && git add README.md"
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "eslint . --quiet",
+    "prepack": "oclif manifest && oclif readme",
+    "version": "oclif readme && git add README.md"
   }
 }

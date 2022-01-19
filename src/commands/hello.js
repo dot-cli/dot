@@ -1,4 +1,4 @@
-import { Command } from '@oclif/command'
+import { Command } from '@oclif/core'
 import { login, profile } from 'lib/auth'
 
 class HelloCommand extends Command {

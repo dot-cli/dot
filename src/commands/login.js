@@ -1,4 +1,5 @@
 import { Command } from '@oclif/core'
+
 import { login } from 'lib/auth'
 
 class LoginCommand extends Command {

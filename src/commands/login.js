@@ -9,6 +9,6 @@ class LoginCommand extends Command {
   }
 }
 
-LoginCommand.description = 'Logs in the user using github'
+LoginCommand.description = 'Login using Github OAuth'
 
 export default LoginCommand
